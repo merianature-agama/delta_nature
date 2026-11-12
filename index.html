@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    
+ <head>
+    <meta charset="UTF-8">
+    <title>ALPHA BETA GAMMA & MUSICA></title>
+    <link rel="stylesheet"
+    href="style.css">
+ </head>
+
+      <h1>BIENVENUE SUR LE SITE D'ARTS ET MÉTIERS DE MERIANATURE
+       </h1> 
+
+      <p>TENDANCES MUSICALES PROFESSIONNELLES & SPIRITUELLES</p>
+
+       <h2 ><img src="Images/RAINBOW.jpeg" width="100%" height="150px"></h2>
+
+    <script>
+
+       function ouvrir(page) {document.getElementById("contenu").innerHTML=page;
+
+        if (page=== "Accueil - Home") { contenu.innerHTML = "<h1>Bienvenue sur mon site d'arts et métiers</h1><p>Tendances musicales professionnelles & spirituelles</p>"; } 
+        
+        else if (page === "Video") { contenu.innerHTML = "<h4>Video</h4><video controls><source src='Video/VIDEO 1.mp4' type='video/mp4'></video><video controls><source src='Video/VIDEO 2.mp4' type='video/mp4'></video><video controls><source src='Video/VIDEO 3.mp4' type='video/mp4'></video><video controls><source src='Video/VIDEO 4.mp4' type='video/mp4'></video><video controls><source src='Video/VIDEO 5.mp4' type='video/mp4'></video>";} 
+        
+        else if (page === "Audio") {contenu.innerHTML = "<h4>Audio</h4><audio controls><source src='Audio/AUDIO 1.mp3' type='audio/mpeg'></audio><audio controls><source src='Audio/AUDIO 2.mp3' type='audio/mpeg'></audio><audio controls><source src='Audio/AUDIO 3.mp3' type='audio/mpeg'></audio><audio controls><source src='Audio/AUDIO 4.mp3' type='audio/mpeg'></audio><audio controls><source src='Audio/AUDIO 5.mp3 type='audio/mpeg'></audio>"; } 
+       
+        else if (page === "Images") {contenu.innerHTML = "<h2>Images></h2><img src='Images/RAINBOW.jpeg' width='300' height='200'><img src='Images/Activités.jpeg' width='60' height='60'><img src='Images/Nos contacts.jpeg' width='60' height='60'>"; } 
+        
+        else if (page === "Nos contacts - Contact") {contenu.innerHTML = "<h6>Nos Contacts +241 62 97 60 01<br>+241 74 15 22 32<br>E mail merianature@gmail.com</h6>";}
+        
+        else if (page === "Activités - News") {contenu.innerHTML ="<h6>Activités<br><br><br>Assistance spirituelle<br>Retour d'affection<br>Protection et désenvoûtement<br>Conception/Grossesse pour femmes ou couples en difficultés<br><br><br><br>L'esprit est PLUS PUISSANT QUE la chair</p><br>Revalorisation du patrimoine culturel et des cultes ancestraux<br><br></h6>";}
+              
+        else if (page === "Retour en haut - Scroll to top") {contenu.innerHTML="<h1>Bienvenue sur le site d'arts et métiers de MERIANATURE</h1><p>Tendances musicales professionnelles & spirituelles</p>";}
+   
+          }
+           </script>
+
+       
+  <body>
+  <div class="conteneur">
+
+    <div class="gauche">
+
+      <h3>MENU <br>
+        <br>
+          <button onclick="ouvrir('Accueil - Home')">Accueil - Home</button><br>
+          
+        <br>
+
+      <button onclick="ouvrir('Activités - News')">Activités - News</button><br>
+         
+           <br>
+
+
+      <button onclick="ouvrir('Nos contacts - Contact')">Nos contacts - Contact</button><br>
+
+       <br>
+          
+       <button onclick="ouvrir('Video')">Video</button><br>
+
+       <br>
+
+      <button onclick="ouvrir('Audio')">Audio</button><br>
+            
+            <br>
+
+          <button onclick="ouvrir('Retour en haut - Scroll to top')">Retour en haut - Scroll to top</button><br>
+            
+      </h3> </div>
+      
+
+    <div class="milieu">
+      <div id="contenu">>
+        <h4>
+        <video id="lecteurVideo" controls width="60px" style="max-width: 100%" height="auto">Votre navigateur ne supporte pas la vidéo.</video>
+ 
+<script>
+          function ouvrirVideo(numero){let lecteur = document.getElementById("lecteur");
+              lecteur.pause();
+              lecteur.src = "Video/VIDEO " + numero + ".mp4";
+              lecteur.load();
+              lecteur.play();} 
+              </script>
+          
+        <audio id="lecteurAudio" controls width="100%" height="auto">Votre navigateur ne supporte pas l'élément audio.</audio> 
+            
+        <script>
+          function ouvrirAudio(numero) {lecteur = document.getElementById("lecteur");
+            lecteur.pause();
+            lecteur.src = "Audio/AUDIO " + numero + ".mp3";
+            lecteur.load();
+            lecteur.play;
+            lecteur.dataset.numero = numero;
+
+            document.getElementById("lecteurAudio").addEventListener("ended", 
+            function () {let numero = parseInt(this.dataset.numero);
+              if (numero<5){ouvrirAudio(numero + 1);}
+            });
+          }
+</script> 
+
+              <video controls preload="metadata" width="100%" height="auto"> 
+          <source src="Video/VIDEO 1.mp4" type="video/mp4">Votre navigateur ne prend pas en charge la lecture de video</video>
+     
+          <section>
+              <audio controls preload="metadata">
+            <source src="Audio/AUDIO1.mp3" type="audio/mpeg">Votre navigateur ne prend pas en charge l'élément audio.
+           </audio> </section>
+
+              <video controls preload="metadata" width="100%" height="auto"> 
+           <source src="Video/VIDEO 2.mp4" type="video/mp4">Votre navigateur ne prend pas en charge la lecture de video</video>
+          
+             <section>
+              <audio controls preload="metadata"> 
+            <source src="Audio/AUDIO 2.mp3" type="audio/mpeg">Votre navigateur ne prend pas en charge l'élément audio.
+          </audio> </section>
+
+               <video controls preload="metadata" width="100%" height="auto"> 
+              <source src="Video/VIDEO 3.mp4" type="video/mp4">Votre navigateur ne prend pas en charge la lecture de video</video>
+        
+              <section>
+                <audio controls preload="metadata"> 
+            <source src="Audio/AUDIO 3.mp3" type="audio/mpeg">Votre navigateur ne prend pas en charge l'élément audio.
+            </audio> </section>
+
+             <video controls preload="metadata" width="100%" height="auto"> 
+            <source src="Video/VIDEO 4.mp4" type="video/mp4">Votre navigateur ne prend pas en charge la lecture de video</video>
+          
+              <section>
+                <audio controls preload="metadata"> 
+              <source src="Audio/AUDIO 4.mp3" type="audio/mpeg">Votre navigateur ne prend pas en charge l'élément audio.
+              </audio> </section>
+
+          <video controls preload="metadata">
+              <source src="Video/VIDEO 5.mp4" type="video/mp4">Votre navigateur ne prend pas en charge la lecture de video</video>
+
+          <section>
+              <audio controls preload="metadata">
+                  <source src="Audio/AUDIO 5.mp3" type="audio/mpeg">Votre navigateur ne prend pas en charge l'élément audio.
+          </section>
+
+          
+       </h4></div>
+       </div>
+
+       <div class="droite">
+         <h5><img src="Images/FEUILLES.jpg" width="100%" height="100%">
+         </img>
+         </h5>
+        </div>
+      </div>
+      </body>
+     </html>

@@ -1,0 +1,132 @@
+ 
+* {box-sizing: border-box;}
+
+body {margin: 0;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+
+.conteneur {display: flex;
+    height: 100vh;}
+
+.gauche {flex: 1; background-color: lightblue;
+overflow-x: scroll; overflow-y: auto;}
+
+.milieu {flex: 2; background-color: lightgreen;
+overflow-x: auto; overflow-y: auto;}
+
+.droite {flex: 1; background-color: orange;
+overflow-x: auto; overflow-y: auto;}
+
+.gauche, .milieu, .droite {display: flex;
+    justify-content: center;
+    color: orange;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    padding: 25px;
+    height: 100vh
+    }
+
+button {display: block;
+width: 100%;
+padding: 12px;
+margin-bottom: 10px;
+cursor: pointer;}
+
+
+
+h1 {color: darkblue;
+font-size: 25px;
+text-align: center;}
+
+video, audio {display: flex;
+flex-direction: column; gap: 20px;
+width: 100%; overflow-y: auto; overflow-x: auto;
+padding: 20px;
+margin-bottom: 20px;
+border-radius: 10px;
+background: yellowgreen;
+
+} 
+
+
+
+h1 {color: blueviolet; font-size: 50px; text-align: center;}
+
+h2 {margin-bottom: 0;}
+
+h3{color: green; width: 600px; text-align: center;}
+
+h4
+video, audio {display: flex;
+flex-direction: column; gap: 20px;
+width: 100%; overflow-y: auto; overflow-x: auto;
+padding: 20px;
+margin-bottom: 20px;
+border-radius: 10px;
+background: yellowgreen;
+#lecteur {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 20px auto;
+    background: black;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+} 
+
+h4
+button {
+    padding: 12px 18px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+h5 {color: darkblue; width: 100%. font-size: 40px; text-align: center;}
+h6 {color: darkblue; width: 100%; font-size: 40px; text-align: center;}
+h7 {color: darkblue; width: 60px; text-align: center;}
+h8 {color: darkblue; width: 60px; text-align: center;}
+
+p {color:darkblue;
+font-size: 60px;
+text-align: center;}
+
+/* Lecteur vidéo */
+#lecteur {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 20px auto;
+    background: black;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+/* Boutons vidéo */
+button {
+    padding: 12px 18px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Téléphones */
+@media screen and (max-width: 100%) {
+    #lecteur {
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+}
