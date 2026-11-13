@@ -79,11 +79,11 @@
         <video id="lecteurVideo" controls width="60px" style="max-width: 100%" height="auto">Votre navigateur ne supporte pas la vidéo.</video>
  
 <script>
-          function ouvrirVideo(numero){let lecteur = document.getElementById("lecteur");
-              lecteur.pause();
-              lecteur.src = "Video/VIDEO " + numero + ".mp4";
-              lecteur.load();
-              lecteur.play();} 
+          function ouvrirVideo(numero){let lecteurVideo = document.getElementById("lecteurVideo");
+              lecteurVideo.pause();
+              lecteurVideo.src = "Video/VIDEO " + numero + ".mp4";
+              lecteurVideo.load();
+              lecteurVideo.play();} 
               </script>
           
         <audio id="lecteurAudio" controls width="100%" height="auto">Votre navigateur ne supporte pas l'élément audio.</audio> 
