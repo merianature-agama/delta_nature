@@ -11,8 +11,9 @@
       <h1>BIENVENUE SUR LE SITE D'ARTS ET MÉTIERS DE MERIANATURE<br><WELCOME TO MERIANATURE ARTS AND CRAFTS SITE
        </h1> <br>
 
-      <p>TENDANCES ARTISTIQUES PROFESSIONNELLES & CULTURELLES<br>ARTISTIC PROFESSIONAL<br>AND CULTURAL TRENDS</p>
-       <h2 ><img src="Images/RAINBOW.jpeg" width="100%" height="150px"></h2>
+      <p>TENDANCES ARTISTIQUES PROFESSIONNELLES & CULTURELLES<br>ARTISTIC PROFESSIONAL AND CULTURAL TRENDS</p>
+      
+        <h2 ><img src="Images/RAINBOW.jpeg" width="100%" height="150px"></h2>
 
     <script>
 
@@ -36,43 +37,31 @@
        
   <body>
   <div class="conteneur">
-
     <div class="gauche">
-
       <h3>MENU <br>
           <button onclick="ouvrir('Accueil - Home')">Accueil - Home</button><br>
-          
-        <br>
-
+                  <br>
       <button onclick="ouvrir('Activités - News')">Activités - News</button><br>
-         
-           <br>
-
+                    <br>
       <button onclick="ouvrir('Nos contacts - Contact')">Nos contacts - Contact</button><br>
-
        <br>
-          
-       <button onclick="ouvrir('Video')">Video</button><br>
-
+                 <button onclick="ouvrir('Video')">Video</button><br>
        <br>
-
       <button onclick="ouvrir('Audio')">Audio</button><br>
-            
-        <br>
-          
-    <button onclick="ouvrir('Retour en haut - Scroll to top')">Retour en haut - Scroll to top</button><br>
+                    <br>
+              <button onclick="ouvrir('Retour en haut - Scroll to top')">Retour en haut - Scroll to top</button><br>
      </h3> </div>
       
 
     <div class="milieu">
       <div id="contenu">
         <h4>
-        <video id="lecteurVideo" controls width="100%" style="max-width: 100%" height="auto">Votre navigateur ne supporte pas la vidéo</video>
+        <video id="lecteurVideo" controls width="100%" height="auto">Votre navigateur ne supporte pas la vidéo</video>
  
 <script>
           function ouvrirVideo(numero){let lecteur = document.getElementById("lecteur");
               lecteur.pause();
-              lecteur.src = "Video/VIDEO " + numero + ".mp4";
+              lecteur.src = "Video/VIDEO " + numero + " .mp4";
               lecteur.load();
               lecteur.play();} 
               </script>
@@ -82,7 +71,7 @@
         <script>
           function ouvrirAudio(numero) {lecteur = document.getElementById("lecteur");
             lecteur.pause();
-            lecteur.src = "Audio/AUDIO " + numero + ".mp3";
+            lecteur.src = "Audio/AUDIO " + numero + " .mp3";
             lecteur.load();
             lecteur.play;
             lecteur.dataset.numero = numero;
@@ -139,6 +128,8 @@
          <h5>
              <img id="lecteurImages" width="100%"
              function ouvrirImages(){document.getElementById("lecteurImages").src="Images/FEUILLES.jpg;}
+             <button onclick="ouvrirImags()">OUVRIR IMAGES</button>
+             <img id="lecteurImages" width="100%>
              </h5>
          </div>
       </div>
